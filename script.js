@@ -18,9 +18,7 @@ todoInput.addEventListener("keypress", (e) => {
         listItem.append(removal);
         e.target.value = "";
         const listArr = document.querySelectorAll("li")
-        console.log(listArr)
         const removalButtonArr = document.querySelectorAll("span")
-        console.log(removalButtonArr)
         for(let i = 0; i < listArr.length; i++) {
             removalButtonArr[i].addEventListener("click", (e) => {
                 listArr[i].remove();
