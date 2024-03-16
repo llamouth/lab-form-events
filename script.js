@@ -17,10 +17,10 @@ todoInput.addEventListener("keypress", (e) => {
         todoList.append(listItem);
         listItem.append(removal);
         e.target.value = "";
-        const listArr = document.querySelectorAll("li")
-        const removalButtonArr = document.querySelectorAll("span")
+        const listArr = document.querySelectorAll("li");
+        const removalButtonArr = document.querySelectorAll("span");
         for(let i = 0; i < listArr.length; i++) {
-            removalButtonArr[i].addEventListener("click", (e) => {
+            removalButtonArr[i].addEventListener("click", () => {
                 listArr[i].remove();
             })
 
@@ -29,4 +29,4 @@ todoInput.addEventListener("keypress", (e) => {
             })
         }
     }
-})
+});
