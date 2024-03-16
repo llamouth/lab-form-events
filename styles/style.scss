@@ -34,10 +34,11 @@ body {
     outline-color:  gray;
     box-sizing: content-box;
     display: flex;
+    box-shadow: 10px 10px 10px lightgrey;
 
 
     &::placeholder {
-        color: rgb(166,233,168)
+        color: rgb(166,233,168);
     }
 
     
@@ -81,12 +82,15 @@ body {
         display: flex;
         flex-grow: 1;
         justify-content: space-between;
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__removal {
         display: inline-flex;
         justify-content: flex-end;
-        font-weight: bold;
         padding:0 5px;
         margin-left: 10px;
 
@@ -95,5 +99,4 @@ body {
             cursor: pointer;
         }
     }
-
 }
